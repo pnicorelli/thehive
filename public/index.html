@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="theHive">
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="components/angular-material/angular-material.css">
+</head>
+<body >
+
+  <md-toolbar layout="row">
+    <div class="md-toolbar-tools">
+      <h1>theHive</h1>
+    </div>
+  </md-toolbar>
+
+  <div layout="row" class="colorNested">
+    <div flex="20">
+      menus
+      <a href="#home">go home</a>
+    </div>
+    <div ng-view flex="50">
+
+    </div>
+    <div flex="30">
+      extensions
+    </div>
+  </div>
+
+
+
+  <script src="components/angular/angular.js"></script>
+  <script src="components/angular-route/angular-route.js"></script>
+  <script src="components/angular-aria/angular-aria.js"></script>
+  <script src="components/angular-animate/angular-animate.js"></script>
+  <script src="components/angular-material/angular-material.js"></script>
+  <script src="thehive/config.js"></script>
+  <script src="thehive/bundle.js"></script>
+
+</body>
+</html>
