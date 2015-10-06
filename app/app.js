@@ -4,7 +4,8 @@
     angular.module('theHive', [
       'ngRoute',
       'ngMaterial',
-      'theHive.home'
+      'theHive.home',
+      'theHive.toolbar'
     ])
     .config(config);
 

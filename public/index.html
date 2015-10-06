@@ -6,9 +6,10 @@
 </head>
 <body >
 
-  <md-toolbar layout="row">
+  <md-toolbar layout="row" ng-controller="ToolbarController as toolbar">
     <div class="md-toolbar-tools">
-      <h1>theHive</h1>
+      <h1>theHive </h1>
+      <span>{{toolbar.env}}</span>
     </div>
   </md-toolbar>
 
@@ -32,8 +33,8 @@
   <script src="components/angular-aria/angular-aria.js"></script>
   <script src="components/angular-animate/angular-animate.js"></script>
   <script src="components/angular-material/angular-material.js"></script>
-  <script src="thehive/config.js"></script>
-  <script src="thehive/bundle.js"></script>
 
+  <script src="thehive/bundle.js"></script>
+  <script src="thehive/config.js"></script>
 </body>
 </html>

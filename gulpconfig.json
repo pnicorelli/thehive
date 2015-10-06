@@ -1,5 +1,6 @@
 {
   "jsSrc":[
+    "app/app.js",
     "app/**/*module.js",
     "app/**/*.js"
   ],

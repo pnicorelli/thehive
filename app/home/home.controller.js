@@ -5,17 +5,11 @@
         .module('theHive.home')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = [];
+    HomeController.$inject = ["CONFIG"];
 
-    function HomeController() {
+    function HomeController(CONFIG) {
         var vm = this;
-console.log("yooo")
-        activate();
+        vm.uno = 1;
 
-        vm.one = "unooo";
-
-        function activate() {
-
-        }
     }
 })();
