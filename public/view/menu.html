@@ -1,0 +1,7 @@
+<div ng-controller="MenuController as menu">
+  <md-list>
+    <md-list-item ng-repeat="s in menu.sections track by $index">
+          <a href="#/content/{{s}}">{{s}}</a>
+    </md-list-item>
+  </md-list>
+</div>

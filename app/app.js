@@ -7,7 +7,8 @@
       'theHive.home',
       'theHive.menu',
       'theHive.toolbar',
-      'theHive.footer'
+      'theHive.footer',
+      'theHive.content'
     ])
     .config(config);
 

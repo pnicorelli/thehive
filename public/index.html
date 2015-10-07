@@ -13,19 +13,19 @@
   </md-toolbar>
 
   <div layout="row">
-    <div flex="30" ng-controller="MenuController as menu">
-a
+    <div flex="30">
+      <div ng-include="'view/menu.html'"></div>
     </div>
     <div ng-view flex="70">
-b
+      b
     </div>
   </div>
 
-<md-divider></md-divider>
+  <md-divider></md-divider>
 
-<md-bottom-sheet  ng-controller="FooterController as footer">
-<div layout-align="center center" flex>theHive - {{footer.env}}</div>
-</md-bottom-sheet>
+  <md-bottom-sheet  ng-controller="FooterController as footer">
+    <div layout-align="center center" flex>theHive {{footer.envLabel}}</div>
+  </md-bottom-sheet>
 
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>

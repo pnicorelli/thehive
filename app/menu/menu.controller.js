@@ -5,10 +5,11 @@
         .module('theHive.menu')
         .controller('MenuController', MenuController);
 
-    MenuController.$inject = ['CONFIG'];
+    MenuController.$inject = ['CONFIG', 'MenuService'];
 
-    function MenuController(CONFIG) {
+    function MenuController(CONFIG, MenuService) {
         var vm = this;
+        vm.sections = MenuService.getSections();
 
         activate();
 

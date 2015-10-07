@@ -9,10 +9,10 @@
 
     function FooterController(CONFIG) {
         var vm = this;
-        vm.env = CONFIG.ENV;
+        vm.envLabel = (CONFIG.ENV === 'production'? '' : ' - '+CONFIG.ENV);
 
         activate();
-console.log(11)
+
         function activate() {
 
         }
