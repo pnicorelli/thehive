@@ -5,12 +5,12 @@
         .module('theHive.toolbar')
         .controller('ToolbarController', ToolbarController);
 
-    ToolbarController.$inject = ['CONFIG'];
+    ToolbarController.$inject = [];
 
-    function ToolbarController(CONFIG) {
+    function ToolbarController() {
 
         var vm = this;
-        vm.env = CONFIG.ENV;
+
 
         activate();
 

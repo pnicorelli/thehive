@@ -9,24 +9,23 @@
   <md-toolbar layout="row" ng-controller="ToolbarController as toolbar">
     <div class="md-toolbar-tools">
       <h1>theHive </h1>
-      <span>{{toolbar.env}}</span>
     </div>
   </md-toolbar>
 
-  <div layout="row" class="colorNested">
-    <div flex="20">
-      menus
-      <a href="#home">go home</a>
+  <div layout="row">
+    <div flex="30" ng-controller="MenuController as menu">
+a
     </div>
-    <div ng-view flex="50">
-
-    </div>
-    <div flex="30">
-      extensions
+    <div ng-view flex="70">
+b
     </div>
   </div>
 
+<md-divider></md-divider>
 
+<md-bottom-sheet  ng-controller="FooterController as footer">
+<div layout-align="center center" flex>theHive - {{footer.env}}</div>
+</md-bottom-sheet>
 
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>

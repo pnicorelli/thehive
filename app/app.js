@@ -5,7 +5,9 @@
       'ngRoute',
       'ngMaterial',
       'theHive.home',
-      'theHive.toolbar'
+      'theHive.menu',
+      'theHive.toolbar',
+      'theHive.footer'
     ])
     .config(config);
 

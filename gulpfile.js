@@ -3,6 +3,8 @@ var concat = require('gulp-concat')
 var rename = require('gulp-rename')
 var util = require('gulp-util');
 var ngConfig = require('gulp-ng-config');
+var watch = require('gulp-watch');
+
 var config = require('./gulpconfig.json');
 
 gulp.task('build-js', function () {
@@ -20,3 +22,7 @@ gulp.task('build-config', function () {
 })
 
 gulp.task('build', ['build-config', 'build-js'],  function(){});
+
+gulp.task('watch', function() {
+  gulp.watch(config.jsSrc, ['build-js']);
+});
