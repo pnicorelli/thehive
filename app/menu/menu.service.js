@@ -12,10 +12,10 @@
 
         function getSections() {
           return [
-            "intro",
-            "auth",
-            "users",
-            "boh"
+            'intro',
+            'auth',
+            'users',
+            'boh'
           ];
         }
     }

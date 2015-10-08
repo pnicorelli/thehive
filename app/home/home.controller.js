@@ -5,7 +5,7 @@
         .module('theHive.home')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ["CONFIG"];
+    HomeController.$inject = ['CONFIG'];
 
     function HomeController(CONFIG) {
         var vm = this;

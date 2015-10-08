@@ -12,10 +12,10 @@ describe('FooterController', function() {
       it('show Envinroment on footer', function() {
         var controller = $controller('FooterController', {
           'CONFIG': {
-            'ENV': 'test'
+            'ENV': 'custom.env'
           }
         });
-        expect(controller.envLabel).toEqual(' - test');
+        expect(controller.envLabel).toEqual(' - custom.env');
       });
     });
 });
