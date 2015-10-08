@@ -11,11 +11,5 @@
 
         var vm = this;
 
-
-        activate();
-
-        function activate() {
-
-        }
     }
 })();

@@ -15,4 +15,4 @@ before_install:
 
 script:
   - gulp build
-  - gulp test
+  - gulp test_ci

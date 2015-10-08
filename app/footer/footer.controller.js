@@ -11,10 +11,5 @@
         var vm = this;
         vm.envLabel = (CONFIG.ENV === 'production'? '' : ' - '+CONFIG.ENV);
 
-        activate();
-
-        function activate() {
-
-        }
     }
 })();

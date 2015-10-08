@@ -10,7 +10,5 @@
     function HomeController(CONFIG) {
         var vm = this;
         vm.uno = 1;
-
-
     }
 })();

@@ -28,9 +28,15 @@ gulp.task('watch', function() {
   gulp.watch(config.jsSrc, ['build-js']);
 });
 
-gulp.task('test', function (done) {
+gulp.task('test_ci', ['build'], function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js',
     singleRun: true
+  }, done).start();
+});
+
+gulp.task('test', ['build'], function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js'
   }, done).start();
 });

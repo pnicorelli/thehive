@@ -22,7 +22,10 @@ module.exports = function(config) {
       'public/components/angular-animate/angular-animate.js',
       'public/components/angular-material/angular-material.js',
       'public/components/angular-material/angular-material.js',
-      'public/thehive/**/*.js',
+      'app/app.js',
+      'app/**/*module.js',
+      'app/**/*.js',
+      'public/thehive/config.js',
       'test/**/*.js'
     ],
 

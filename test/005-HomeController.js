@@ -1,4 +1,4 @@
-describe('FooterController', function() {
+describe('HomeController', function() {
   beforeEach(module('theHive'));
 
     var $controller;
@@ -8,10 +8,10 @@ describe('FooterController', function() {
       $controller = _$controller_;
     }));
 
-    describe('FooterController', function() {
-      it('show Envinroment on footer', function() {
-        var controller = $controller('FooterController');
-        expect(controller.envLabel).toEqual(' - development');
+    describe('HomeController', function() {
+      it('should istantiate the controller', function() {
+        var controller = $controller('HomeController');
+        expect(controller).toBeDefined();
       });
     });
 });
