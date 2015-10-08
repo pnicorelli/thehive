@@ -2,7 +2,8 @@
   "jsSrc":[
     "app/app.js",
     "app/**/*module.js",
-    "app/**/*.js"
+    "app/**/*.js",
+    "!app/**/*spec.js"
   ],
 
   "DEST": "public/thehive"

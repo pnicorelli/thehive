@@ -26,7 +26,6 @@ module.exports = function(config) {
       'app/**/*module.js',
       'app/**/*.js',
       'public/thehive/config.js',
-      'test/**/*.js'
     ],
 
 
