@@ -4,6 +4,7 @@ var rename = require('gulp-rename')
 var util = require('gulp-util');
 var ngConfig = require('gulp-ng-config');
 var watch = require('gulp-watch');
+var Server = require('karma').Server;
 
 var config = require('./gulpconfig.json');
 
@@ -25,4 +26,11 @@ gulp.task('build', ['build-config', 'build-js'],  function(){});
 
 gulp.task('watch', function() {
   gulp.watch(config.jsSrc, ['build-js']);
+});
+
+gulp.task('test', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
 });
