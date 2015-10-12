@@ -6,5 +6,9 @@
     "!app/**/*spec.js"
   ],
 
+  "htmlSrc":[
+    "app/**/*.html"
+  ],
+
   "DEST": "public/thehive"
 }

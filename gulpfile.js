@@ -8,6 +8,11 @@ var Server = require('karma').Server;
 
 var config = require('./gulpconfig.json');
 
+gulp.task('build-html', function () {
+  gulp.src(config.htmlSrc)
+  .pipe(gulp.dest(config.DEST+'/../view'))
+})
+
 gulp.task('build-js', function () {
   gulp.src(config.jsSrc)
   .pipe(concat('bundle.js'))

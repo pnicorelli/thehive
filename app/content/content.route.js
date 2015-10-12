@@ -8,7 +8,7 @@
     function config($routeProvider) {
         $routeProvider
             .when('/content/:section', {
-              templateUrl: 'view/content.html',
+              templateUrl: 'view/content/content.html',
               controller: 'ContentController',
               controllerAs: 'vm'
             });
