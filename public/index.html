@@ -8,29 +8,34 @@
 
   <md-toolbar layout="row" ng-controller="ToolbarController as toolbar">
     <div class="md-toolbar-tools">
-      <h1>theHive</h1>
+      <h1 class="md-display-3">theHive</h1>
     </div>
   </md-toolbar>
 
   <div layout="row">
-    <div flex="30">
+    <div flex="25">
       <div ng-include="'view/menu/menu.html'"></div>
     </div>
-    <div ng-view flex="70">
+    <div ng-view flex="75">
     </div>
+  </div>
+
+  <div layout="row">
+&nbsp;
   </div>
 
   <md-divider></md-divider>
 
-  <md-bottom-sheet  ng-controller="FooterController as footer">
-    <div layout-align="center center" flex>theHive {{footer.envLabel}}</div>
-  </md-bottom-sheet>
+  <footer  ng-controller="FooterController as footer" layout="row" layout-align="start end" style="height:30px;">
+    <div layout="row" layout-align="center center" flex>theHive {{footer.envLabel}}</div>
+  </footer>
 
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>
   <script src="components/angular-aria/angular-aria.js"></script>
   <script src="components/angular-animate/angular-animate.js"></script>
   <script src="components/angular-material/angular-material.js"></script>
+  <script src="components/angular-slugify/angular-slugify.js"></script>
 
   <script src="thehive/bundle.js"></script>
   <script src="thehive/config.js"></script>

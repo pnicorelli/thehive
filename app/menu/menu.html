@@ -1,7 +1,12 @@
 <div ng-controller="MenuController as menu">
   <md-list>
     <md-list-item ng-repeat="s in menu.sections track by $index">
-          <a href="#/content/{{s}}">{{s}}</a>
+          <a href="#/content/{{s.slug}}" class="md-title">{{s.label}}</a>
     </md-list-item>
   </md-list>
+
+  <md-item>
+        <input placeholder="add section..." type="text" name="newSection" ng-model="menu.newSection" ng-keyup="$event.keyCode == 13 && menu.addSection()">
+  </md-item>
+
 </div>

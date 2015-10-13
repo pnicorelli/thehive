@@ -22,6 +22,7 @@ module.exports = function(config) {
       'public/components/angular-animate/angular-animate.js',
       'public/components/angular-material/angular-material.js',
       'public/components/angular-material/angular-material.js',
+      'public/components/angular-slugify/angular-slugify.js',
       'app/app.js',
       'app/**/*module.js',
       'app/**/*.js',

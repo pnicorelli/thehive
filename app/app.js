@@ -4,6 +4,7 @@
     angular.module('theHive', [
       'ngRoute',
       'ngMaterial',
+      'slugifier',
       'theHive.home',
       'theHive.menu',
       'theHive.toolbar',

@@ -12,10 +12,10 @@
 
         function getSections() {
           return [
-            'intro',
-            'auth',
-            'users',
-            'boh'
+            { label: 'Intro', slug: 'intro'},
+            { label: 'Auth', slug: 'auth'},
+            { label: 'Users', slug: 'users'},
+            { label: 'Stuff', slug: 'stuff'}
           ];
         }
     }

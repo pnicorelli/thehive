@@ -31,6 +31,7 @@ gulp.task('build', ['build-config', 'build-js'],  function(){});
 
 gulp.task('watch', function() {
   gulp.watch(config.jsSrc, ['build-js']);
+  gulp.watch(config.htmlSrc, ['build-html']);
 });
 
 gulp.task('test_ci', ['build'], function (done) {
