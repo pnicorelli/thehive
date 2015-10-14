@@ -1,17 +1,19 @@
 describe('HomeController', function() {
+  'use strict';
+
   beforeEach(module('theHive'));
 
-    var $controller;
+  var $controller;
 
-    beforeEach(inject(function(_$controller_){
-      // The injector unwraps the underscores (_) from around the parameter names when matching
-      $controller = _$controller_;
-    }));
+  beforeEach(inject(function(_$controller_){
+    // The injector unwraps the underscores (_) from around the parameter names when matching
+    $controller = _$controller_;
+  }));
 
-    describe('HomeController', function() {
-      it('should istantiate the controller', function() {
-        var controller = $controller('HomeController');
-        expect(controller).toBeDefined();
-      });
+  describe('HomeController', function() {
+    it('should istantiate the controller', function() {
+      var controller = $controller('HomeController');
+      expect(controller).toBeDefined();
     });
+  });
 });

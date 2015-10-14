@@ -1,3 +1,5 @@
+/* eslint "strict": 0 */
+
 var gulp = require('gulp')
 var concat = require('gulp-concat')
 var rename = require('gulp-rename')
@@ -5,6 +7,7 @@ var util = require('gulp-util');
 var ngConfig = require('gulp-ng-config');
 var watch = require('gulp-watch');
 var Server = require('karma').Server;
+var eslint = require('gulp-eslint');
 
 var config = require('./gulpconfig.json');
 
@@ -45,4 +48,12 @@ gulp.task('test', ['build'], function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js'
   }, done).start();
+});
+
+
+gulp.task('lint', function () {
+    return gulp.src(config.jsSrc)
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
 });

@@ -15,7 +15,7 @@
       if( vm.newSection !== ''){
         var newItem = {
           label: vm.newSection,
-          slug: Slug.slugify(vm.newSection),
+          slug: Slug.slugify(vm.newSection)
         }
         var exists = false;
         angular.forEach( vm.sections, function( value, key, object ){
